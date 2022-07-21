@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
-df=pd.read_csv('IRIS.csv')
+df=pd.read_csv(https://raw.githubusercontent.com/prabhu3397/Iris-Streamlit-3/main/IRIS.csv)
 
 
 
@@ -31,23 +31,23 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris.data=['sepal length','sepal width','petal length','petal width']
-iris.target=['species']
-X = iris.data
-Y = iris.target
+iris= pd.read_csv('https://raw.githubusercontent.com/prabhu3397/Iris-Streamlit-3/main/IRIS.csv')
+feature_col= ['sepal_length','sepal_width','petal_length','petal_width']
+X = df [feature_col]
+y = df.species
 
 clf = RandomForestClassifier()
-clf.fit(X, Y)
+clf.fit(X, y)
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(iris.target_names)
+st.write(iris.y)
 
 st.subheader('Prediction')
-st.write(iris.target_names[prediction])
-#st.write(prediction)
+#st.write(iris.y[prediction])
+st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
