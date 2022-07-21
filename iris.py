@@ -29,9 +29,9 @@ st.subheader('User Input parameters')
 st.write(df)
 
 iris= pd.read_csv('https://raw.githubusercontent.com/prabhu3397/Iris-Streamlit-3/main/IRIS.csv')
-feature_col= ['sepal_length','sepal_width','petal_length','petal_width']
-X = df [feature_col]
-y = df.species
+
+X = iris.drop('species',axis=1)
+y = iris['species']
 
 clf = RandomForestClassifier()
 clf.fit(X, y)
