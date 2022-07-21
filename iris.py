@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
-df=pd.read_csv('IRIS')
+df=pd.read_csv('IRIS.csv')
 
 
 
@@ -31,8 +31,8 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris.data=['Sepal length','Sepal width','Petal length','Petal width']
-iris.target=['Species']
+iris.data=['sepal length','sepal width','petal length','petal width']
+iris.target=['species']
 X = iris.data
 Y = iris.target
 
