@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
-df=pd.read_csv(https://raw.githubusercontent.com/prabhu3397/Iris-Streamlit-3/main/IRIS.csv)
+df=pd.read_csv('https://raw.githubusercontent.com/prabhu3397/Iris-Streamlit-3/main/IRIS.csv')
 
 
 
