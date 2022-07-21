@@ -31,7 +31,8 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = datasets.load_iris()
+iris.data=['Sepal length','Sepal width','Petal length','Petal width']
+iris.target=['Species']
 X = iris.data
 Y = iris.target
 
