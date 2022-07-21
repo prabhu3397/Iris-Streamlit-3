@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
-st.image(iris.png)
+st.image('iris.png')
 
 st.write("""
 # Simple Iris Flower Prediction App
